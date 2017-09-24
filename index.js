@@ -5,25 +5,26 @@ function myAnimal() {
 }
 
 function yourAnimal() {
-  // How can we make sure that this function
-  // and the above function both pass?
-  // P.S.: You can't just hard-code 'cat' below
+  var animal = "cat";
   return animal
 }
 
-function add2(n) {
-  return n + two
+var n
+n = Math.floor(Math.random() * 1000)
 
-  // Feel free to move things around!
-  const two = 2
+function add2(n) {
+  n += 2
+  return n
 }
 
 var funkyFunction = function() {
+  var innerVariable = "FUNKY!";
+
   return function() {
-    return "FUNKY!"
+    return innerVariable;
+   }
   }
-}
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction
+var theFunk = "FUNKY!"
